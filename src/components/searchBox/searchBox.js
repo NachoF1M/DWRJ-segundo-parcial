@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useState } from 'react';
+import './index.css';
 
-import SearchIcon from "./searchIcon";
+const SearchBox = ({ onSearch }) => {
+  const [searchText, setSearchText] = useState('');
 
-import "./index.css";
+  const handleInputChange = (event) => {
+    setSearchText(event.target.value);
+  };
 
-const SearchBox = () => {
+  const handleSearch = (event) => {
+    if (event.key === 'Enter') {
+      onSearch(searchText);
+    }
+  };
 
-  return(
-  <div className="search-box">
-    <SearchIcon />
-    <input type="text" placeholder="Busca en este sitio web" />
-  </div>
-)};
+  return (
+    <div className="search-box">
+      <input
+        type="text"
+        placeholder="Busca en este sitio web"
+        value={searchText}
+        onChange={handleInputChange}
+        onKeyPress={handleSearch}
+      />
+    </div>
+  );
+};
 
 export default SearchBox;

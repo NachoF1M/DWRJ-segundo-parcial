@@ -2,7 +2,6 @@ import React from 'react';
 
 import { useNavigate } from "react-router-dom";
 import HomeIcon from './homeIcon';
-
 import './index.css';
 
 const Navbar = ({ children }) => {
@@ -17,5 +16,6 @@ const Navbar = ({ children }) => {
 		</div>
 	);
 };
+
 
 export default Navbar;
