@@ -7,6 +7,7 @@
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     cursor: pointer;
 }
+
 .meal-previw img:after {
     content: "";
     border-radius: 5px;
@@ -25,9 +26,38 @@
 .meal-previw img:hover {
     -webkit-transform: scale(1.05, 1.05);
     transform: scale(1.05, 1.05);
-  }
-  
-  .meal-previw img:hover::after {
-      opacity: 1;
-  }
-  
+}
+
+.meal-previw img:hover::after {
+    opacity: 1;
+}
+
+
+
+.meal-details {
+    display: flex;
+    width: 60vw; /* Adjust the total width of the columns */
+    margin: 0 auto; /* Center the columns */
+}
+
+.column {
+    margin-right: 30px;
+    flex: 1;
+    width: 50%; 
+    
+}
+
+.img-details {
+    width: 100%;
+    height: auto; 
+    border-radius: 25px;
+}
+
+.meal-info {
+    text-align: left; 
+    
+}   
+ .meal-title{
+    text-align: left;
+    margin-left: 30px ;
+ }

@@ -16,7 +16,7 @@ const MealPreviwGrid = () => {
 			try {
 				const mealData = await SearchMealByName(searchTerm);
 
-				// Check if there are no meals found
+				
 				if (!mealData || mealData.length === 0) {
 					console.log('No meals found.');
 					setMeals([]);
