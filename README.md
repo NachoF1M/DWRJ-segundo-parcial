@@ -1,9 +1,9 @@
 # Parcial Segundo Corte Desarrollo Web 🚀
 
 
-Nombre completo estudiante :
+Nombre completo estudiante : Luis Ignacio Forero Molina
 
-Codigo :
+Codigo : 0000224778
 
 **Descripción del Problema:**
 
